@@ -11,6 +11,7 @@
 		001D17A825D4995900FC40B3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17A525D4995900FC40B3 /* FeedViewController.swift */; };
 		001D17A925D4995900FC40B3 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17A625D4995900FC40B3 /* FeedModel.swift */; };
 		001D17AA25D4995900FC40B3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17A725D4995900FC40B3 /* FeedViewModel.swift */; };
+		001D17B025D499EA00FC40B3 /* FeedServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17AF25D499EA00FC40B3 /* FeedServiceLayer.swift */; };
 		0029531D25D49543000D9945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029531C25D49543000D9945 /* AppDelegate.swift */; };
 		0029531F25D49543000D9945 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029531E25D49543000D9945 /* SceneDelegate.swift */; };
 		0029532425D49543000D9945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0029532225D49543000D9945 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		001D17A525D4995900FC40B3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		001D17A625D4995900FC40B3 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		001D17A725D4995900FC40B3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		001D17AF25D499EA00FC40B3 /* FeedServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedServiceLayer.swift; sourceTree = "<group>"; };
 		0029531925D49543000D9945 /* LearNBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearNBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0029531C25D49543000D9945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0029531E25D49543000D9945 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		001D179A25D498C200FC40B3 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				001D17AD25D499D500FC40B3 /* Feed */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -111,6 +114,14 @@
 				001D17A525D4995900FC40B3 /* FeedViewController.swift */,
 				001D17A725D4995900FC40B3 /* FeedViewModel.swift */,
 				001D17A625D4995900FC40B3 /* FeedModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		001D17AD25D499D500FC40B3 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				001D17AF25D499EA00FC40B3 /* FeedServiceLayer.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				001D17AA25D4995900FC40B3 /* FeedViewModel.swift in Sources */,
+				001D17B025D499EA00FC40B3 /* FeedServiceLayer.swift in Sources */,
 				001D17A925D4995900FC40B3 /* FeedModel.swift in Sources */,
 				0029531D25D49543000D9945 /* AppDelegate.swift in Sources */,
 				001D17A825D4995900FC40B3 /* FeedViewController.swift in Sources */,
