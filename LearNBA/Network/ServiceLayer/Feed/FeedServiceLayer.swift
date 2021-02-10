@@ -16,7 +16,7 @@ class FeedServiceLayer {
     func getMovieList(completionHandler: @escaping ([FeedModel]) -> ()) {
         BaseNetworkLayer
             .shared
-            .request(requestUrl: "")
+            .request(requestUrl: APIParam.feedUrl.rawValue)
             .subscribe(onNext: { (data: FeedModel) in
                 completionHandler([data])
             }, onError: { (error: Error) in

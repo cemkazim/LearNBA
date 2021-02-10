@@ -30,4 +30,8 @@ class FeedViewController: UIViewController {
 }
 
 extension FeedViewController: FeedViewModelDelegate {
+    
+    func setFeedData(_ feedModelList: [FeedModel]) {
+        viewModel.feedModelList = feedModelList
+    }
 }

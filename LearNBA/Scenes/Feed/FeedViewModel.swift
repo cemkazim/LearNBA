@@ -11,17 +11,28 @@
 import Foundation
 
 protocol FeedViewModelDelegate: class {
+    func setFeedData(_ feedModelList: [FeedModel])
 }
 
 class FeedViewModel {
     
     // MARK: - Properties -
     
+    var feedModelList = [FeedModel]()
     weak var delegate: FeedViewModelDelegate?
     
     // MARK: - Initialize -
     
-    init() {}
+    init() {
+        getData()
+    }
     
     // MARK: - Methods -
+    
+    func getData() {
+        FeedServiceLayer.shared.getMovieList(completionHandler: { [weak self] (response) in
+            guard let self = self else { return }
+            self.delegate?.setFeedData(response)
+        })
+    }
 }
