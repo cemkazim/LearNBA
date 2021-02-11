@@ -16,7 +16,7 @@ class FeedServiceLayer {
     func getFeedModelList(completionHandler: @escaping ([FeedModel]) -> ()) {
         BaseNetworkLayer
             .shared
-            .request(requestUrl: APIParam.feedUrl.rawValue)
+            .request(url: APIParam.feedUrl.rawValue, method: .get)
             .subscribe(onNext: { (data: FeedModel) in
                 completionHandler([data])
             }, onError: { (error: Error) in
