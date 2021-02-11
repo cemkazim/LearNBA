@@ -30,7 +30,7 @@ class FeedViewModel {
     // MARK: - Methods -
     
     func getData() {
-        FeedServiceLayer.shared.getMovieList(completionHandler: { [weak self] (response) in
+        FeedServiceLayer.shared.getFeedModelList(completionHandler: { [weak self] (response) in
             guard let self = self else { return }
             self.delegate?.setFeedData(response)
         })

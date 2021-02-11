@@ -13,7 +13,7 @@ class FeedServiceLayer {
     static let shared = FeedServiceLayer()
     private var disposeBag = DisposeBag()
     
-    func getMovieList(completionHandler: @escaping ([FeedModel]) -> ()) {
+    func getFeedModelList(completionHandler: @escaping ([FeedModel]) -> ()) {
         BaseNetworkLayer
             .shared
             .request(requestUrl: APIParam.feedUrl.rawValue)
